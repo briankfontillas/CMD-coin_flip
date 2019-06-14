@@ -50,7 +50,8 @@ while cycle == True:
                 total_tails = score.count('Tails')
                 print(f'Guesses right: {correct} Guesses wrong: {incorrect}')
                 print(f'Heads: {total_heads} Tails: {total_tails}')
-                quit()
+                cycle = False
+                break
 
             else:
                 print('Input not valid, Try again: ')
